@@ -54,7 +54,6 @@ function verFacturacion()
         mesinicio = dia+"/"+datos4[0][1];
          montofac = datos4[1][1];
     }
-    alert(mesfinal);
     $("#LoadingImage1").show();
     $.ajax({
             type: "POST",
@@ -287,9 +286,7 @@ function verificarDia(dat)
         else{
             var mm = f.getMonth() +1;    
         }
-        
-        alert(mm);
-        
+            
         if(mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm==12)
             {
                 dd = 31;
